@@ -1,6 +1,6 @@
 # reflective-check
 
-An agent skill for Codex and Claude Code that checks whether a suggested change is actually worth making before giving advice, edits, rewrites, or refactors.
+An agent skill for Codex and Claude that checks whether a suggested change is actually worth making before giving advice, edits, rewrites, or refactors.
 
 ## Why
 
