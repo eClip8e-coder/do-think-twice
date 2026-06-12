@@ -8,7 +8,7 @@ AI assistants often suggest changes because they can, not because the change is 
 
 **Do Think Twice** adds a simple discipline: before recommending a change, compare the proposed change against keeping the original. Different is not automatically better. A recommendation should only appear when its expected benefit is greater than its cost, risk, and uncertainty.
 
-三思而后行：先判断改动是否真的值得，再给建议。
+三思而后行：先判断建议的改动是否真的值得，再提出建议。
 
 ## What It Does
 
