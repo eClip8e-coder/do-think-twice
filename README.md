@@ -1,49 +1,142 @@
 # reflective-check
 
-A Codex skill that evaluates whether a suggested change is truly worth making before giving advice or editing.
+A Codex skill that checks whether a suggested change is actually worth making before giving advice, edits, rewrites, or refactors.
 
-## What it does
+## Why
 
-`reflective-check` makes Codex compare a proposed change against keeping the original before recommending edits, rewrites, refactors, design changes, wording changes, formatting changes, or strategy shifts.
+AI assistants often suggest changes because they can, not because the change is clearly better than the original.
 
-The core rule is simple: different is not automatically better. A recommendation should only be given when its expected benefit is greater than its cost, risk, and uncertainty.
+`reflective-check` adds a simple discipline: before recommending a change, compare the proposed change against keeping the original. Different is not automatically better. A recommendation should only appear when its expected benefit is greater than its cost, risk, and uncertainty.
 
-## When to use it
+## What It Does
 
-Use this skill when reviewing or improving:
+This skill helps Codex avoid over-suggesting during:
 
-- advice and critique
-- writing, polishing, and editing
-- academic papers, abstracts, figures, citations, and revision plans
-- resumes and professional text
-- code reviews and refactors
-- image, SVG, and layout edits
-- optimization or strategy comparisons
+- critique and review
+- rewriting, polishing, and editing
+- academic paper revision
+- resume revision
+- code review and refactoring
+- image, SVG, and layout editing
+- optimization and strategy comparison
 
-It is also intended for prompts such as:
+It classifies recommendations as:
 
-- "What should I change?"
-- "Is this better?"
-- "还有什么可以改?"
-- "检查一下还有哪些问题?"
+| Category | Meaning |
+| --- | --- |
+| Must fix | A real error, rule violation, misleading meaning, or blocker. |
+| Strongly recommended | Clear improvement with low risk. |
+| Optional | Minor improvement; the original is also acceptable. |
+| Not recommended | Unnecessary, risky, or only a style preference. |
 
-## How it responds
+When the original is already good, the skill tells the user to keep it.
 
-The skill filters suggestions by value instead of listing every possible change.
+## Install
 
-Recommendations are classified as:
+Most users should install the skill globally so it is available in every Codex project:
 
-- **Must fix**: real errors, rule violations, misleading meaning, or blockers.
-- **Strongly recommended**: clear improvement with low risk.
-- **Optional**: minor improvement where the original is also acceptable.
-- **Not recommended**: unnecessary, risky, or merely a style preference.
-
-When the original is already good, the skill says so directly. When no change is needed, it recommends keeping the original.
-
-## Skill location
-
-```text
-.agents/skills/reflective-check/SKILL.md
+```bash
+npx skills add eClip8e-coder/reflective-check -a codex -g -y
 ```
 
-This is an instruction-only Codex skill. It does not include scripts, assets, or extra runtime dependencies.
+If your installer asks for a specific skill name, use:
+
+```bash
+npx skills add eClip8e-coder/reflective-check --skill reflective-check -a codex -g -y
+```
+
+After installation, invoke it by name:
+
+```text
+Use reflective-check to review this paragraph.
+```
+
+You can also ask Codex naturally:
+
+```text
+What should I change?
+Is this better?
+还有什么可以改?
+检查一下还有哪些问题?
+```
+
+## Manual Install
+
+If you do not use the skills installer, copy the skill folder into your Codex skills directory:
+
+```text
+skills/reflective-check
+```
+
+For example, on Windows:
+
+```powershell
+git clone https://github.com/eClip8e-coder/reflective-check.git
+Copy-Item -Recurse .\reflective-check\skills\reflective-check "$env:USERPROFILE\.codex\skills\reflective-check"
+```
+
+On macOS or Linux:
+
+```bash
+git clone https://github.com/eClip8e-coder/reflective-check.git
+mkdir -p ~/.codex/skills
+cp -R reflective-check/skills/reflective-check ~/.codex/skills/reflective-check
+```
+
+## Update
+
+If installed with the skills installer:
+
+```bash
+npx skills update -g -y
+```
+
+If installed manually, pull the repository and copy `skills/reflective-check` again.
+
+## Project Layout
+
+```text
+reflective-check/
+├── README.md
+├── LICENSE
+├── package.json
+└── skills/
+    └── reflective-check/
+        ├── SKILL.md
+        └── agents/
+            └── openai.yaml
+```
+
+The skill is intentionally instruction-only. It has no scripts, assets, build step, or runtime dependencies.
+
+## Skill Contents
+
+The actual Codex instructions live here:
+
+```text
+skills/reflective-check/SKILL.md
+```
+
+The UI metadata for compatible agents lives here:
+
+```text
+skills/reflective-check/agents/openai.yaml
+```
+
+## Uninstall
+
+If installed with the skills installer:
+
+```bash
+npx skills remove eClip8e-coder/reflective-check -g
+```
+
+If installed manually, delete:
+
+```text
+~/.codex/skills/reflective-check
+```
+
+## License
+
+MIT License.
