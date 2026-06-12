@@ -1,7 +1,7 @@
 {
   "name": "reflective-check",
   "version": "1.0.0",
-  "description": "A Codex skill that checks whether suggested changes are actually worth making.",
+  "description": "An agent skill for Codex and Claude Code that checks whether suggested changes are actually worth making.",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -11,6 +11,7 @@
   "keywords": [
     "agent-skills",
     "codex",
+    "claude-code",
     "skill",
     "review",
     "editing",

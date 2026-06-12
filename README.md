@@ -1,6 +1,6 @@
 # reflective-check
 
-A Codex skill that checks whether a suggested change is actually worth making before giving advice, edits, rewrites, or refactors.
+An agent skill for Codex and Claude Code that checks whether a suggested change is actually worth making before giving advice, edits, rewrites, or refactors.
 
 ## Why
 
@@ -10,7 +10,7 @@ AI assistants often suggest changes because they can, not because the change is 
 
 ## What It Does
 
-This skill helps Codex avoid over-suggesting during:
+This skill helps AI coding agents avoid over-suggesting during:
 
 - critique and review
 - rewriting, polishing, and editing
@@ -33,7 +33,9 @@ When the original is already good, the skill tells the user to keep it.
 
 ## Install
 
-Most users should install the skill globally so it is available in every Codex project:
+Most users should install the skill globally so it is available in every project.
+
+### Codex
 
 ```bash
 npx skills add eClip8e-coder/reflective-check -a codex -g -y
@@ -58,6 +60,32 @@ What should I change?
 Is this better?
 还有什么可以改?
 检查一下还有哪些问题?
+```
+
+### Claude Code
+
+Claude Code users can install the same skill globally:
+
+```bash
+npx skills add eClip8e-coder/reflective-check -a claude-code -g -y
+```
+
+If your installer asks for a specific skill name, use:
+
+```bash
+npx skills add eClip8e-coder/reflective-check --skill reflective-check -a claude-code -g -y
+```
+
+After installation, invoke it by name:
+
+```text
+Use reflective-check to review this diff.
+```
+
+Depending on your Claude Code skill setup, it may also be available as:
+
+```text
+/reflective-check
 ```
 
 ## Manual Install
