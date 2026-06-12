@@ -1,4 +1,4 @@
-# reflective-check
+# Do Think Twice 三思而后行
 
 An agent skill for Codex and Claude that checks whether a suggested change is actually worth making before giving advice, edits, rewrites, or refactors.
 
@@ -6,7 +6,9 @@ An agent skill for Codex and Claude that checks whether a suggested change is ac
 
 AI assistants often suggest changes because they can, not because the change is clearly better than the original.
 
-`reflective-check` adds a simple discipline: before recommending a change, compare the proposed change against keeping the original. Different is not automatically better. A recommendation should only appear when its expected benefit is greater than its cost, risk, and uncertainty.
+**Do Think Twice** adds a simple discipline: before recommending a change, compare the proposed change against keeping the original. Different is not automatically better. A recommendation should only appear when its expected benefit is greater than its cost, risk, and uncertainty.
+
+三思而后行：先判断改动是否真的值得，再给建议。
 
 ## What It Does
 
@@ -38,19 +40,19 @@ Most users should install the skill globally so it is available in every project
 ### Codex
 
 ```bash
-npx skills add eClip8e-coder/reflective-check -a codex -g -y
+npx skills add eClip8e-coder/do-think-twice -a codex -g -y
 ```
 
 If your installer asks for a specific skill name, use:
 
 ```bash
-npx skills add eClip8e-coder/reflective-check --skill reflective-check -a codex -g -y
+npx skills add eClip8e-coder/do-think-twice --skill do-think-twice -a codex -g -y
 ```
 
 After installation, invoke it by name:
 
 ```text
-Use reflective-check to review this paragraph.
+Use do-think-twice to review this paragraph.
 ```
 
 You can also ask Codex naturally:
@@ -67,48 +69,48 @@ Is this better?
 Claude Code users can install the same skill globally:
 
 ```bash
-npx skills add eClip8e-coder/reflective-check -a claude-code -g -y
+npx skills add eClip8e-coder/do-think-twice -a claude-code -g -y
 ```
 
 If your installer asks for a specific skill name, use:
 
 ```bash
-npx skills add eClip8e-coder/reflective-check --skill reflective-check -a claude-code -g -y
+npx skills add eClip8e-coder/do-think-twice --skill do-think-twice -a claude-code -g -y
 ```
 
 After installation, invoke it by name:
 
 ```text
-Use reflective-check to review this diff.
+Use do-think-twice to review this diff.
 ```
 
 Depending on your Claude Code skill setup, it may also be available as:
 
 ```text
-/reflective-check
+/do-think-twice
 ```
 
 ## Manual Install
 
-If you do not use the skills installer, copy the skill folder into your Codex skills directory:
+If you do not use the skills installer, copy the skill folder into your agent skills directory:
 
 ```text
-skills/reflective-check
+skills/do-think-twice
 ```
 
-For example, on Windows:
+For example, on Windows with Codex:
 
 ```powershell
-git clone https://github.com/eClip8e-coder/reflective-check.git
-Copy-Item -Recurse .\reflective-check\skills\reflective-check "$env:USERPROFILE\.codex\skills\reflective-check"
+git clone https://github.com/eClip8e-coder/do-think-twice.git
+Copy-Item -Recurse .\do-think-twice\skills\do-think-twice "$env:USERPROFILE\.codex\skills\do-think-twice"
 ```
 
-On macOS or Linux:
+On macOS or Linux with Codex:
 
 ```bash
-git clone https://github.com/eClip8e-coder/reflective-check.git
+git clone https://github.com/eClip8e-coder/do-think-twice.git
 mkdir -p ~/.codex/skills
-cp -R reflective-check/skills/reflective-check ~/.codex/skills/reflective-check
+cp -R do-think-twice/skills/do-think-twice ~/.codex/skills/do-think-twice
 ```
 
 ## Update
@@ -119,17 +121,17 @@ If installed with the skills installer:
 npx skills update -g -y
 ```
 
-If installed manually, pull the repository and copy `skills/reflective-check` again.
+If installed manually, pull the repository and copy `skills/do-think-twice` again.
 
 ## Project Layout
 
 ```text
-reflective-check/
+do-think-twice/
 ├── README.md
 ├── LICENSE
 ├── package.json
 └── skills/
-    └── reflective-check/
+    └── do-think-twice/
         ├── SKILL.md
         └── agents/
             └── openai.yaml
@@ -139,16 +141,16 @@ The skill is intentionally instruction-only. It has no scripts, assets, build st
 
 ## Skill Contents
 
-The actual Codex instructions live here:
+The actual agent instructions live here:
 
 ```text
-skills/reflective-check/SKILL.md
+skills/do-think-twice/SKILL.md
 ```
 
 The UI metadata for compatible agents lives here:
 
 ```text
-skills/reflective-check/agents/openai.yaml
+skills/do-think-twice/agents/openai.yaml
 ```
 
 ## Uninstall
@@ -156,13 +158,13 @@ skills/reflective-check/agents/openai.yaml
 If installed with the skills installer:
 
 ```bash
-npx skills remove eClip8e-coder/reflective-check -g
+npx skills remove eClip8e-coder/do-think-twice -g
 ```
 
-If installed manually, delete:
+If installed manually for Codex, delete:
 
 ```text
-~/.codex/skills/reflective-check
+~/.codex/skills/do-think-twice
 ```
 
 ## License

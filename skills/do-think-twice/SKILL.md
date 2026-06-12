@@ -1,9 +1,9 @@
 ---
-name: reflective-check
+name: do-think-twice
 description: Evaluate whether suggested changes are actually worth making before giving advice or editing. Use when the user asks for advice, improvement suggestions, critique, review, rewriting, polishing, editing, optimization, code refactoring, paper revision, resume revision, image/SVG/layout modification, strategy comparison, "what should I change?", "is this better?", "还有什么可以改?", or "检查一下还有哪些问题?".
 ---
 
-# Reflective Check
+# Do Think Twice
 
 ## Purpose
 

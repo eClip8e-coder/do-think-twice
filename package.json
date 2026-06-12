@@ -1,13 +1,13 @@
 {
-  "name": "reflective-check",
+  "name": "do-think-twice",
   "version": "1.0.0",
-  "description": "An agent skill for Codex and Claude Code that checks whether suggested changes are actually worth making.",
+  "description": "An agent skill for Codex and Claude Code that checks whether suggested changes are actually worth making before acting.",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eClip8e-coder/reflective-check.git"
+    "url": "git+https://github.com/eClip8e-coder/do-think-twice.git"
   },
-  "homepage": "https://github.com/eClip8e-coder/reflective-check#readme",
+  "homepage": "https://github.com/eClip8e-coder/do-think-twice#readme",
   "keywords": [
     "agent-skills",
     "codex",
@@ -15,7 +15,8 @@
     "skill",
     "review",
     "editing",
-    "reflection"
+    "reflection",
+    "do-think-twice"
   ],
   "files": [
     "LICENSE",
