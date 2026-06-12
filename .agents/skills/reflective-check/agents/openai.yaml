@@ -1,4 +1,4 @@
 interface:
-  display_name: "Reflective Advisor"
+  display_name: "Reflective Check"
   short_description: "Evaluate whether suggested changes are actually worth making."
   default_prompt: "Use reflective judgment before recommending changes; compare keeping the original against making each proposed change."
