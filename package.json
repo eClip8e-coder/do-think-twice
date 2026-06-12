@@ -1,7 +1,7 @@
 {
   "name": "do-think-twice",
   "version": "1.0.0",
-  "description": "An agent skill for Codex and Claude Code that checks whether suggested changes are actually worth making before acting.",
+  "description": "An agent skill for Codex and Claude Code that adds decision-quality checks before suggestions, edits, rewrites, or refactors.",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -16,6 +16,7 @@
     "review",
     "editing",
     "reflection",
+    "decision-quality",
     "do-think-twice"
   ],
   "files": [

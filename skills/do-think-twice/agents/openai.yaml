@@ -1,4 +1,4 @@
 interface:
   display_name: "Do Think Twice"
-  short_description: "Evaluate whether suggested changes are actually worth making."
-  default_prompt: "Use reflective judgment before recommending changes; compare keeping the original against making each proposed change."
+  short_description: "Check value, risk, and certainty before suggesting changes."
+  default_prompt: "Use do-think-twice to compare keeping the original against each proposed change before recommending edits."
