@@ -4,7 +4,7 @@ An agent skill for Codex and Claude that checks whether a suggested change is ac
 
 ## Why
 
-AI assistants often suggest changes because they can, not because the change is clearly better than the original.
+AI assistants often suggest changes because they can, not because the change is really better than the original.
 
 **Do Think Twice** adds a simple discipline: before recommending a change, compare the proposed change against keeping the original. Different is not automatically better. A recommendation should only appear when its expected benefit is greater than its cost, risk, and uncertainty.
 
