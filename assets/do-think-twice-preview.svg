@@ -57,17 +57,17 @@
   <text x="712" y="266" fill="#6b7280" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18">Fewer changes, each justified</text>
 
   <g font-family="Inter, Segoe UI, Arial, sans-serif">
-    <rect x="712" y="288" width="424" height="56" rx="12" fill="#ecfdf5" stroke="#a7f3d0"/>
-    <text x="736" y="321" fill="#065f46" font-size="18" font-weight="700">Must fix</text>
-    <text x="836" y="321" fill="#1f2937" font-size="18">Correct a real blocker</text>
+    <rect x="712" y="300" width="424" height="52" rx="12" fill="#ecfdf5" stroke="#a7f3d0"/>
+    <text x="736" y="331" fill="#065f46" font-size="18" font-weight="700">Must fix</text>
+    <text x="836" y="331" fill="#1f2937" font-size="18">Correct a real blocker</text>
 
-    <rect x="712" y="364" width="424" height="56" rx="12" fill="#f0fdf4" stroke="#bbf7d0"/>
-    <text x="736" y="397" fill="#166534" font-size="18" font-weight="700">Strong</text>
-    <text x="836" y="397" fill="#1f2937" font-size="18">Clarify risky wording</text>
+    <rect x="712" y="372" width="424" height="52" rx="12" fill="#f0fdf4" stroke="#bbf7d0"/>
+    <text x="736" y="403" fill="#166534" font-size="18" font-weight="700">Strong</text>
+    <text x="836" y="403" fill="#1f2937" font-size="18">Clarify risky wording</text>
 
-    <rect x="712" y="440" width="424" height="56" rx="12" fill="#f9fafb" stroke="#e5e7eb"/>
-    <text x="736" y="473" fill="#374151" font-size="18" font-weight="700">Keep</text>
-    <text x="836" y="473" fill="#1f2937" font-size="18">Leave acceptable style alone</text>
+    <rect x="712" y="444" width="424" height="52" rx="12" fill="#f9fafb" stroke="#e5e7eb"/>
+    <text x="736" y="475" fill="#374151" font-size="18" font-weight="700">Keep</text>
+    <text x="836" y="475" fill="#1f2937" font-size="18">Leave acceptable style alone</text>
   </g>
 
   <g font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" fill="#6b7280">
