@@ -8,8 +8,6 @@ An instruction-only skill for Codex and Claude Code that makes an agent ask one 
 
 > Is this actually better than keeping the original?
 
-![Do Think Twice before and after preview](assets/do-think-twice-preview.svg)
-
 ## Before / After
 
 **Before:** The agent tries to be helpful by finding edits, rewrites, refactors, and polish opportunities even when the original is already good enough.
@@ -148,9 +146,6 @@ do-think-twice/
 |-- README.md
 |-- LICENSE
 |-- package.json
-|-- assets/
-|   |-- do-think-twice-preview.svg
-|   `-- do-think-twice-preview.png
 |-- examples/
 |   |-- academic-abstract.md
 |   |-- code-refactor.md
@@ -164,8 +159,6 @@ do-think-twice/
 ```
 
 The skill is intentionally instruction-only. It has no scripts, build step, or runtime dependencies.
-
-The preview image in `assets/` is for the README and GitHub social preview.
 
 ## Skill Contents
 
